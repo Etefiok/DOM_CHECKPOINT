@@ -139,3 +139,4 @@ cartItems.forEach(item => {
 
 // display the total price
 console.log(`Total Price: $${totalPrice.toFixed(2)}`);*/
+
