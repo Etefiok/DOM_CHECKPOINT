@@ -46,7 +46,7 @@ minusBtns.forEach(btn => {
 
 const addToCartBtns = document.querySelectorAll(".add-to-cart-btn");
 
-// event listeners to each add to cart button
+/*// event listeners to each add to cart button
 addToCartBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".item");
@@ -85,7 +85,7 @@ deleteBtns.forEach(btn => {
     const cartItem = btn.closest(".cart-item");
     cartItem.remove();
   });
-});
+});*/
 
 //heart button
 const heartBtn = document.querySelector(".heart-btn");
@@ -94,16 +94,27 @@ heartBtn.addEventListener("click", () => {
   heartBtn.classList.toggle("clicked");
 });
 
-//heart button1
-const heartButton = document.querySelector(".heart-btn1");
 
-heartButton.addEventListener("click", () => {
-    heartButton.classList.toggle("clicked");
-});
+// calling the + and - button to change both the price and quantity on click
+const priceDisplay = document.getElementById('price-display');
+  const plusButton = document.getElementById('plus-button');
+  const minusButton = document.getElementById('minus-button');
+  
+  let price = 10.00; // initial price
+  
 
+  plusButton.addEventListener('click', () => {
+    price += 10.00; // increase price by $10.00
+    priceDisplay.innerText = `$${price.toFixed(2)}`; // update price display
+  });
 
-
-
+  minusButton.addEventListener('click', ()=>{
+    if (price > 10) {
+    price -= 10.00; // decrease price by $10.00
+    priceDisplay.innerText = `$${price.toFixed(2)}`;
+     }
+    
+  })
 
 
 /*

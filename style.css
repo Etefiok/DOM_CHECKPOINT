@@ -52,14 +52,28 @@
 
   .item{
     margin-left: 400px;
+    margin-right: 650px;
+    background-color: #0066ff;
+    
   }
+
+  /* .plus-btn{
+    border: none;
+  } */
 
    .quantity-input{
     width:50px;
+    border: none;
+    cursor: pointer;
   }
+
+  /* .add-to-cart-btn{
+    border: none;
+  } */
 
   .delete-btn{
     /* margin-left: 400px; */
+    
   }
   
   .heart-btn {
@@ -85,67 +99,8 @@ text-shadow:
   .heart-btn.clicked i {
     color: rgb(255, 0, 0);
     font-weight: none;
-    text-shadow:
-    none
+    text-shadow:none;
   }
 
 
-  .heart-btn1 {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 400px;
-  }
-  
  
-  .heart-btn1 i {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    
-  }
-
-  .heart-btn1.clicked i {
-    color: rgb(255, 0, 0);
-    font-weight: none;
-    text-shadow:
-    none
-  }
-
-
-  .slideshow2 {
-    position: relative;
-    width:60%;
-    height: 80px;
-    
-  }
-
-  .slide2 {
-    position: absolute;
-    width: 60%;
-    height: 200%;
-  }
-  
-  .slide2 img {
-    width: 60%;
-    height: 200%;
-    object-fit: cover;
-  }
-
-  .item2{
-    margin-left: 400px;
-  }
-
-   .quantity-input2{
-    width:50px;
-  }
-
-  .delete-btn2{
-    margin-top: 150px;
-    font-size: 17px;
-  }
